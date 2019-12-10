@@ -8,11 +8,6 @@ steps:
     echo '{ "commitID":"$COMMIT_SHA", "buildID":"$BUILD_ID"}' > buildDetails
     npm install
 
-- id: 'Deploy to App Engine'
-  name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', 'app.yaml','--version=$COMMIT_SHA','--quiet']
-  waitFor: ['Rebuild Node Files']
-
 - id: 'Create Container'
   name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$_IMAGE_REPO/gcpdemo:$BUILD_ID', '.']
