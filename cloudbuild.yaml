@@ -48,9 +48,7 @@ steps:
      touch file-to-upload.txt
      aws s3 cp file-to-upload.txt s3://runcibleinc-s3-bucket/file-to-upload.txt
      echo "Configuring kubectl to point to EKS cluster"
-     aws eks update-kubeconfig --name runcibleinc-eksctl # this updates kubeconfig to pull iam tokens using aws-cli
-     kubectl version
-     kubectl get deployments
+     aws eks update-kubeconfig --name runcibleinc-eks # this updates kubeconfig to pull iam tokens using aws-cli
      kubectl set image deployment/frontend-production webserver=gcr.io/$_IMAGE_REPO/gcpdemo:$BUILD_ID
      echo "Deployment to EKS complete!"
   secretEnv: ['AWS_SECRET_KEY']
