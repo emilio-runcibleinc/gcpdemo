@@ -56,7 +56,7 @@ steps:
 secrets:
 - kmsKeyName: projects/prod-261517/locations/global/keyRings/multi-cloud-demo-keyring/cryptoKeys/primary-key
   secretEnv:
-    AWS_SECRET_KEY: 'CiQADj/MCoLWshnLJcSVV99iI+b4BM6vd/9Ba/vIJDuidP1ZT3ISMgCHA04Iut1S8qnx++NdWsY3QDsPm+nSmWLkCVlW2nB5rX3BAhTaiVydMQXnwaxDXSBj'
+    AWS_SECRET_KEY: 'CiQADj/MCvNUX84NSFDuqfDJmgqfk1em0fHIDC1cwYXWFCrmv/4SUgCHA04IVUMv2zt32ByCOpRiDvmJw+wAv9BHqupA9LTl0My1Pt+1edeWtUk0TCa/gRJ2vPJOGD/EgTmskWl9zHsxx9VNufZYsS2bTDrU5wxUVbU='
 
 #options:
 # machineType: 'N1_HIGHCPU_8'
