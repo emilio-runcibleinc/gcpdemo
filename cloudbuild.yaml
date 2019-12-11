@@ -41,7 +41,7 @@ steps:
   - -c
   - |
      echo "Configuring AWS credentials and configs..."
-     export AWS_ACCESS_KEY_ID=AKIAVGT4O7A2A6KZRXFC
+     export AWS_ACCESS_KEY_ID=AKIAVGT4O7A2GFZT64CN
      export AWS_SECRET_ACCESS_KEY=$$AWS_SECRET_KEY
      export AWS_DEFAULT_REGION=us-east-2
      echo "Test file upload to S3"
@@ -56,7 +56,7 @@ steps:
 secrets:
 - kmsKeyName: projects/prod-261517/locations/global/keyRings/multi-cloud-demo-keyring/cryptoKeys/primary-key
   secretEnv:
-    AWS_SECRET_KEY: 'CiQADj/MCpwKMYGTiCloBMaYRBBDaPkKjSh7xPOHDAMSxRe8eroSUgCHA04IlnsTLx4GnxOVjfKgDny9ro8oBEKM2n3JlpSr+wEuoc2t4v0TZ0HiEZbp3Yo/WQhhgVdL0FGECd77NMmuiF3ue9W9Ts9FkYqc7ICiFHc='
+    AWS_SECRET_KEY: 'CiQADj/MCoLWshnLJcSVV99iI+b4BM6vd/9Ba/vIJDuidP1ZT3ISMgCHA04Iut1S8qnx++NdWsY3QDsPm+nSmWLkCVlW2nB5rX3BAhTaiVydMQXnwaxDXSBj'
 
 #options:
 # machineType: 'N1_HIGHCPU_8'
